@@ -1,0 +1,43 @@
+.skills-container {
+    padding: 80px 20px 20px; /* Increase the top padding to at least the height of the header */
+    background-color: #f4f5f7;
+    color: #32325d;
+}
+
+
+.skills-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.category-title {
+    color: #5e72eb; /* Or any other color for the category titles */
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    list-style-type: none; /* Removes the default list styling */
+    padding: 0;
+}
+
+.skill {
+    background-color: #fff; /* Or any other color for the skill items */
+    display: inline-block; /* To display the skills inline */
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px; /* Optional: for rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: for a slight shadow effect */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer; /* Changes the mouse cursor to a pointer to indicate it's clickable */
+}
+
+.skill:hover {
+    background-color: #5e72eb; /* Color changes on hover */
+    color: #f4f5f7; /* Text color changes on hover */
+    transform: translateY(-3px); /* Makes the skill 'pop' up slightly */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhances the shadow for a 'lifted off the page' look */
+}

@@ -1,0 +1,74 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #000; /* Or any other color you prefer */
+    color: #fff;
+}
+
+.profile-picture-container {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px;
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.about-content {
+    max-width: 600px; /* Adjust width as needed */
+    text-align: left;
+}
+
+.about-content h1 {
+    color: #fff; /* Or any other color you prefer */
+    margin-bottom: 20px;
+}
+
+.resume-button {
+    background-color: #5E72EB; /* Adjust button color as needed */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Optional: for rounded corners */
+    margin-top: 20px; /* Adds space above the button */
+}
+
+.resume-button:hover {
+    background-color: #7f1ae5; /* Adjust hover color as needed */
+}
+
+
+.profile-picture-container {
+    width: 200px; /* Set the desired width for the container */
+    height: 200px; /* Set the desired height for the container */
+    overflow: hidden;
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will crop the image to cover the entire container */
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust based on your design */
+}
+.resume-link {
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Keeps the button text color */
+}
+
+
