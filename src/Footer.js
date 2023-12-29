@@ -6,7 +6,6 @@ const Footer = () => {
         <footer className="footer">
             <a href="https://www.linkedin.com/in/guguloth-pavankalyan-nayak/" className="social-link"  target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://github.com/pavannaiik" className="social-link"  target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://leetcode.com/dynamicpk" className="social-link"  target="_blank" rel="noopener noreferrer">LeetCode</a>
             {/* Add more social media links here */}
         </footer>
     );
