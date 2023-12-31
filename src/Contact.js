@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Contact.css'; // Make sure to create a corresponding CSS file
+import emailjs from 'emailjs-com';
+import './Contact.css'; // Make sure your CSS file is correctly linked
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -14,9 +15,23 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log(formData);
-    }
+
+        // Replace with your EmailJS service ID, template ID, and user ID
+        const serviceID = 'service_34m04cr';
+        const templateID = 'template_es9co0g';
+        const userID = 'R2CtwvJyWy-9T4n6N';
+
+        emailjs.send(serviceID, templateID, formData, userID)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                // Handle success here (e.g., showing a success message)
+                // Optionally reset the form after successful submission
+                setFormData({name: '', email: '', message: ''});
+            }, (err) => {
+                console.log('FAILED...', err);
+                // Handle errors here (e.g., showing an error message)
+            });
+    };
 
     return (
         <div className="contact-container">

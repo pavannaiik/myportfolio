@@ -1,6 +1,6 @@
 .contact-container {
-    background-color: #000; /* Adjust color as needed */
-    color: #fff;
+    background-color: white; /* Background color is white */
+    color: #333; /* A soft black for the text for better readability on white */
     text-align: center;
     padding: 40px;
     min-height: 100vh; /* Adjust or remove depending on your layout */
@@ -11,18 +11,23 @@
 }
 
 .contact-title {
-    color: #fff;
+    color: #333; /* Title color changed to soft black for contrast */
     margin-bottom: 20px;
+    font-size: 2em; /* Adjust the size as needed */
 }
 
 .contact-form {
     width: 100%;
     max-width: 500px; /* Adjust width as needed */
+    border: 1px solid #ddd; /* subtle border */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
 }
 
 .input-group {
     margin-bottom: 15px;
-    background: #222; /* Adjust background color as needed */
+    background: #f7f7f7; /* Light grey background for input fields */
     border-radius: 5px;
     overflow: hidden;
 }
@@ -33,29 +38,30 @@
     border: none;
     padding: 15px;
     background: none;
-    color: #fff;
+    color: #333; /* Input text color is soft black for readability */
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #ccc;
+    color: #888; /* Placeholder text is a medium grey */
 }
 
 .send-button {
     width: 100%;
     padding: 15px;
     border: none;
-    background-color: #a020f0; /* Adjust button color as needed */
-    color: #fff;
+    background-color: #5e72eb; /* A green color for the button */
+    color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 5px; /* Rounded corners for the button */
 }
 
 .send-button:hover {
-    background-color: #7f1ae5; /* Adjust on hover color as needed */
+    background-color: #5e72eb; /* A darker shade of green on hover */
 }
 
 .contact-footer {
     margin-top: 30px;
-    color: #fff;
+    color: #333; /* Footer text is soft black */
 }

@@ -1,7 +1,7 @@
 .skills-container {
-    padding: 80px 20px 20px; /* Increase the top padding to at least the height of the header */
-    background-color: #f4f5f7;
-    color: #32325d;
+    padding: 20px; /* Increase the top padding to at least the height of the header */
+    background-color: white;
+    color: #5e72eb;
 }
 
 
@@ -25,7 +25,7 @@
 }
 
 .skill {
-    background-color: #fff; /* Or any other color for the skill items */
+    background-color: white; /* Or any other color for the skill items */
     display: inline-block; /* To display the skills inline */
     margin: 5px;
     padding: 5px 10px;
@@ -41,3 +41,7 @@
     transform: translateY(-3px); /* Makes the skill 'pop' up slightly */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhances the shadow for a 'lifted off the page' look */
 }
+#skills {
+    margin-top: 20px; /* Adjust this value to reduce the space */
+}
+

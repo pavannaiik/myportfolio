@@ -1,7 +1,7 @@
 .projects-container {
-    padding: 80px 20px 20px; /* Increase the top padding to at least the height of the header */
-    background-color: #f4f5f7;
-    color: #32325d;
+    padding: 20px; /* Increase the top padding to at least the height of the header */
+    background-color: white;
+    color: #5e72eb;
 }
 
 
@@ -18,9 +18,7 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: for shadow effect */
 }
 
-.project-name {
-    color: #5e72eb; /* Adjust title color as needed */
-}
+
 
 .project-description {
     margin: 10px 0;
@@ -28,4 +26,11 @@
 
 .project-technologies {
     font-style: italic;
+}
+
+.project:hover{
+    background-color: #5e72eb; /* Color changes on hover */
+    color: #f4f5f7; /* Text color changes on hover */
+    transform: translateY(-3px); /* Makes the skill 'pop' up slightly */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhances the shadow for a 'lifted off the page' look */
 }

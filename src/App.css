@@ -25,3 +25,14 @@ a:hover {
   margin-top: -60px; /* Negative margin should match the height */
   visibility: hidden;
 }
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.component-class {
+  margin: 10px; /* Adjust as needed */
+  padding: 10px; /* Adjust as needed */
+}
+

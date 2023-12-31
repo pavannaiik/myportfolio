@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
-    background-color: #000; /* Or any other color you prefer */
-    color: #fff;
+    background-color: white; /* Or any other color you prefer */
+    color: #5e72eb;
 }
 
 .profile-picture-container {
@@ -28,7 +28,7 @@
 }
 
 .about-content h1 {
-    color: #fff; /* Or any other color you prefer */
+    color: #5e72eb; /* Or any other color you prefer */
     margin-bottom: 20px;
 }
 
