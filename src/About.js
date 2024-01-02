@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './About.css';
 
@@ -9,17 +8,20 @@ const About = () => {
                 <img src='pk_image.jpg' alt="Profile" className="profile-picture"/>
             </div>
             <div className="about-content">
-            <h1>About Me.</h1>
-                <p>
-                    As a seasoned Application Engineer with a forte in front-end development and system automation, my expertise spans from crafting intricate RESTful services to automating complex workflows. My technical toolkit is equipped with a diverse set of programming languages like Java, Python, and JavaScript, and I'm well-versed in database management and ORM technologies.
-
-                    At Oracle, I've streamlined software development processes, notably automating API testing to cut down regression testing time drastically. My stint at CGI Inc was marked by optimizing MySQL databases and leveraging RabbitMQ to enhance system efficiency. My commitment to security and performance is demonstrated through the successful implementation of OAuth 2.0 and cache strategies that significantly improved application responsiveness.
-
-                    I take pride in my project portfolio, which includes an AI-powered BrandCollab System, a Smart Gardening System utilizing IoT, and an innovative Electronic Toll Gate System using advanced text recognition algorithms.
-
-                    Continuously upskilling, I hold certifications in Apache Kafka and cloud-native technologies. I'm eager to apply my analytical and technical skills to solve challenges and create impactful solutions.</p>
-                <p>Currently, I am persuing master at University at Buffalo SUNY in Computer Science .</p>
-                {/* Update this part: wrap the button in an anchor tag */}
+                <h1>About Me.</h1>
+                <ul>
+                    <li>Software developer with expertise in back-end development and system automation.</li>
+                    <li>Skilled in crafting intricate RESTful services and automating complex workflows.</li>
+                    <li>Proficient in a diverse set of programming languages including Java, Python, and JavaScript.</li>
+                    <li>Well-versed in database management and ORM technologies.</li>
+                    <li>Streamlined software development processes at Oracle, notably in automating API testing to reduce regression testing time drastically.</li>
+                    <li>Optimized MySQL databases and leveraged RabbitMQ to enhance system efficiency at CGI Inc.</li>
+                    <li>Implemented OAuth 2.0 and cache strategies, improving application responsiveness and security.</li>
+                    <li>Developed a project portfolio including an AI-powered BrandCollab System, a Smart Gardening System utilizing IoT, and an Electronic Toll Gate System using advanced text recognition algorithms.</li>
+                    <li>Continuously upskilling with certifications in Apache Kafka and cloud-native technologies.</li>
+                    <li>Eager to apply analytical and technical skills to solve challenges and create impactful solutions.</li>
+                    <li>Currently pursuing a master's degree in Computer Science at the University at Buffalo, SUNY.</li>
+                </ul>
                 <a href='PavanKalyan_Resume.pdf' target="_blank" rel="noopener noreferrer" className="resume-link">
                     <button className="resume-button">Check out my resume!</button>
                 </a>
@@ -29,4 +31,3 @@ const About = () => {
 }
 
 export default About;
-
