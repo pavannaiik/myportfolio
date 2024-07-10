@@ -1,0 +1,29 @@
+/* Base custom cursor styles */
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999; /* Ensure the cursor is above all elements */
+}
+
+/* Cursor outline styling */
+.cursor-outline {
+  width: 30px; /* Adjust the size of the outline */
+  height: 30px; /* Adjust the size of the outline */
+  background-color: transparent; /* Make it transparent */
+  border: 2px solid rgba(0, 150, 255, 0.8); /* Color and opacity of the outline */
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* Center the outline */
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease; /* Smooth transitions */
+}
+
+/* Cursor dot styling */
+.cursor-dot {
+  width: 8px; /* Increased size for better visibility */
+  height: 8px; /* Increased size for better visibility */
+  background-color: rgba(0, 150, 255, 1); /* Enhanced color for the dot */
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* Center the dot */
+  transition: background-color 0.2s ease; /* Smooth transitions */
+}
