@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Pdf from "./assets/PavanResume.pdf";
+import Pdf from "./assets/PavanKalyan_Resume.pdf";
 import { Link } from "react-scroll";
 
 export default function Header() {

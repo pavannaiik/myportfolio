@@ -39,12 +39,13 @@ export default function Experience() {
             duration="June 2024 — August 2024"
             location="New York, USA"
             description={[
-              "Designed and developed AI-driven automation projects using OpenAI and Google Gemini.",
-              "Analyzed and compared generative AI language models for project suitability.",
-              "Worked with a tech stack including AWS, GCP, Django/Python, React/JavaScript, and PostgreSQL in a nearly 100% open-source environment.",
+              "Developed and automated a workflow to publish solution articles from Google Docs to Freshdesk, reducing manual processing\
+              time by 60% using Python and Django by integrating Freshdesk API and Google Doc API, improving content management\
+              by 80%", "Integrated Google Gemini model into the product for publishing the Knowledge Based tickets from Asana portal to Freshdesk\
+              chat Help section using Python and AI/ML which boosted user engagement by 30%",
               "Participated in an intern project addressing current publishing-related challenges."
             ]}
-            techStack={["Python", "Django", "Flask", "Google Cloud", "Oracle DB", "Postgres"]}
+            techStack={["Python", "Django", "Flask", "Google Gemini","Postgres"]}
           />
           <ExperienceCard
             logo={OracleLogo}
