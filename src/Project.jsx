@@ -7,6 +7,7 @@ import ExperienceAnimationData from "./assets/ExperienceAnimation.json";
 import BrandCollabAI from "./assets/BrandCollabAI.png";
 import ChatApplication from "./assets/ChatApplication.jpg";
 import TollGateSystem from "./assets/TollGateSystem.jpeg";
+import ShoppingService from "./assets/ShoppingService.png";
 
 export default function Project() {
   return (
@@ -57,7 +58,7 @@ export default function Project() {
             techStack={["Python", "OpenCV EAST Text Editor", "Tesseract v4’s LSTM deep learning text recognition algorithm", "Ngrok server","LSTM","Deep Learning"]}
           />
           <ProjectCard
-            logo={TollGateSystem}
+            logo={ShoppingService}
             title="Shopping Service"
             description={[
               "Developed a shopping service with Java microservices and gRPC",
