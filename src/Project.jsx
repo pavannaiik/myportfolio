@@ -56,6 +56,16 @@ export default function Project() {
             ]}
             techStack={["Python", "OpenCV EAST Text Editor", "Tesseract v4’s LSTM deep learning text recognition algorithm", "Ngrok server","LSTM","Deep Learning"]}
           />
+          <ProjectCard
+            logo={TollGateSystem}
+            title="Shopping Service"
+            description={[
+              "Developed a shopping service with Java microservices and gRPC",
+              "Implemented user and order services, enabling data exchange via gRPC"
+            ]}
+            techStack={["Java", "Microservices", "gRPC", "H2Database"]}
+            githubLink="https://github.com/pavannaiik/shopping-service"
+          />
           <Link
             to="education"
             className="font-semibold leading-6 text-white hover:text-opacity-50"
@@ -72,7 +82,7 @@ export default function Project() {
   );
 }
 
-const ProjectCard = ({ logo, title, description, techStack }) => (
+const ProjectCard = ({ logo, title, description, techStack, githubLink }) => (
   <Fade bottom duration={1900}>
     <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-white sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
       <div className="p-8 sm:p-10 lg:flex-auto">
@@ -93,15 +103,33 @@ const ProjectCard = ({ logo, title, description, techStack }) => (
           </h4>
           <div className="h-px flex-auto bg-gray-100"></div>
         </div>
-        <ul role="list" className="mt-8 grid grid-cols-3 gap-6 text-sm leading-6 text-white sm:grid-cols-3 sm:gap-6">
+        <ul
+          role="list"
+          className="mt-8 grid grid-cols-3 gap-6 text-sm leading-6 text-white sm:grid-cols-3 sm:gap-6"
+        >
           {techStack.map((tech, index) => (
-            <li key={index} className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:justify-start">
+            <li
+              key={index}
+              className="flex flex-col items-center gap-3 sm:flex-row sm:items-center sm:justify-start"
+            >
               <span className="relative z-10 rounded-full bg-white px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-400">
                 {tech}
               </span>
             </li>
           ))}
         </ul>
+        {githubLink && (
+          <div className="mt-8">
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
+            >
+              View on GitHub
+            </a>
+          </div>
+        )}
       </div>
       <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
         <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16 h-full">
@@ -113,3 +141,4 @@ const ProjectCard = ({ logo, title, description, techStack }) => (
     </div>
   </Fade>
 );
+
