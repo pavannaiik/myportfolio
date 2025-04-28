@@ -6,8 +6,7 @@ import DownAnimationData from "./assets/DownAnimation.json";
 import ExperienceAnimationData from "./assets/ExperienceAnimation.json";
 import BrandCollabAI from "./assets/BrandCollabAI.png";
 import ChatApplication from "./assets/ChatApplication.jpg";
-import TollGateSystem from "./assets/TollGateSystem.jpeg";
-import ShoppingService from "./assets/ShoppingService.png";
+import DistributedKVStore from "./assets/DistributedKVStore.png";
 
 export default function Project() {
   return (
@@ -21,7 +20,8 @@ export default function Project() {
                   Projects
                 </h2>
                 <p className="mt-2 text-lg leading-8 text-white">
-                Diverse and impactful projects showcasing my skills in software development, artificial intelligence, and system design. Each project reflects a commitment to innovation, problem-solving, and delivering high-quality solutions.                </p>
+                  Diverse and impactful projects showcasing my skills in software development, artificial intelligence, and system design. Each project reflects a commitment to innovation, problem-solving, and delivering high-quality solutions.
+                </p>
               </Fade>
             </div>
             <div className="flex justify-center items-center">
@@ -33,39 +33,31 @@ export default function Project() {
             </div>
           </div>
           <ProjectCard
+            logo={DistributedKVStore}
+            title="Fault-Tolerant Distributed Key-Value Store (Raft Consensus)"
+            description={[
+              "Designed and implemented a robust, fault-tolerant distributed key-value store in GoLang, inspired by Google Spanner.",
+              "Utilized the Raft algorithm to achieve consensus across nodes, and implemented optimistic concurrency control (OCC), two-phase locking (2PL), and two-phase commits (2PC) for distributed transaction management."
+            ]}
+            techStack={["Distributed Systems", "Go", "Raft Algorithm", "OCC", "2PL", "2PC"]}
+          />
+          <ProjectCard
             logo={ChatApplication}
             title="Real-Time Chat Application"
             description={[
-              "Architected and implemented a real-time chat application utilizing advanced socket programming techniques, enabling seamless, bidirectional communication between users.",
-              "It involved creation of a scalable server-client architecture supporting multiple concurrent connections, and ensuring efficient data transmission and low latency in message delivery."
+              "Architected and implemented a real-time chat application using socket programming techniques, enabling seamless, bidirectional communication between users.",
+              "Created a scalable server-client architecture supporting multiple concurrent connections, ensuring efficient data transmission and low latency in message delivery."
             ]}
-            techStack={["C++", "Client-Server Model", "Network Protocols", "Socket Programming", "TCP/IP Suite"]}
+            techStack={["C++", "Client-Server Model", "Network Protocols", "Socket Programming", "TCP/IP Suite", "UDP"]}
           />
           <ProjectCard
             logo={BrandCollabAI}
             title="BrandCollab AI System"
             description={[
-              "Designed a system where brands and influencers can collaborate and find the perfect match for their products and influencers can discover opportunities that align with their personal brand."
+              "Led a team of three at UBHacks 2023 Hackathon to develop a platform enabling brands and influencers to collaborate effectively.",
+              "Implemented semantic matching algorithms and a recommendation system to pair influencers with relevant brand opportunities, optimizing engagement."
             ]}
-            techStack={["Semantic Matching Algorithms", "Recommendation System", "Java", "Python", "Flask", "Postgres", "SpringBoot", "ReactJS"]}
-          />
-          <ProjectCard
-            logo={TollGateSystem}
-            title="Electronic Toll Gate System"
-            description={[
-              "Developed a toll gate system to minimize delays on toll roads by collecting tolls without cash and without requiring cars to stop."
-            ]}
-            techStack={["Python", "OpenCV EAST Text Editor", "Tesseract v4’s LSTM deep learning text recognition algorithm", "Ngrok server","LSTM","Deep Learning"]}
-          />
-          <ProjectCard
-            logo={ShoppingService}
-            title="Shopping Service"
-            description={[
-              "Developed a shopping service with Java microservices and gRPC",
-              "Implemented user and order services, enabling data exchange via gRPC"
-            ]}
-            techStack={["Java", "Microservices", "gRPC", "H2Database"]}
-            githubLink="https://github.com/pavannaiik/shopping-service"
+            techStack={["Java", "Python", "PostgreSQL", "Spring Boot", "Semantic Search"]}
           />
           <Link
             to="education"
@@ -142,4 +134,3 @@ const ProjectCard = ({ logo, title, description, techStack, githubLink }) => (
     </div>
   </Fade>
 );
-
